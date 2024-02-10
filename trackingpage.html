@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Document</title>
+    </head>
+    <body>
+    
+        <nav style="height: 50px; width: full; border: 2px; display: flex; gap: 10px; justify-content: space-between; margin-bottom: 50px; margin-left: 50px;  margin-right: 50px; margin-top: 20px;">
+          <div>
+            <h2 ><a  style="text-decoration: none" href="index.html"><Span style="color: white;"> Campus Location Tracker</Span></a></h2>
+          </div>
+    
+    
+          <div style="display: flex; gap: 10px; ">  
+            <div><a  style="text-decoration: none" href="index.html"><Span style="color: white;"> Home</Span></a></div>
+            <div>About</div>
+            <div>Address</div>
+            <div>New Feature</div>
+            <div>Contact Us</div>
+          </div>
+        </nav>
+        <!-- <div>
+            <p>Track Location of This Campus</p>
+        </div> -->
+    
+        <container  style="background-image: url('/images/bg_4.png'); background-position: center; background-repeat: no-repeat; display: flex; justify-content: space-around; align-items: center; padding: 10px;">
+    
+            <div style=" opacity: 100%; width: 80%; border-radius: 20px; height: 50%; background-color: #050525; padding: 10px;">
+                <p style="font-size:  40px;">Track Locations - Click </p>
+                <br>
+             
+                <div style="display: flex; justify-content: space-around; margin-bottom: 40px;">
+                    <div>
+                        <h2>By Office</h2>
+                        <br>
+
+                        <button  id="vice" style="padding: 4px; background-color: aqua; border: none; font-weight: 700;"  onclick="showElement('vice_chancellor')">Vice chancellor</button>
+                        <button id="dean" style="padding: 4px; background-color: aqua; border: none; font-weight: 700;" onclick="showElement('dean_office')" >Dean</button>
+                        <button id="register" style="padding: 4px; background-color: aqua; border: none; font-weight: 700;" id="vice" style="padding: 2px;" onclick="showElement('register_office')">Register</button>
+                    </div>
+                    <div>
+                        <h2>By Department</h2>
+                        <br> 
+                        <button id="csed" style="padding: 4px; background-color: aqua; border: none; font-weight: 700;"  onclick="showElement('cse')">CSE</button>
+                        <button id="eeed" style="padding: 4px; background-color: aqua; border: none; font-weight: 700;"  onclick="showElement('eee')">EEE</button> 
+                        <button id="bbad" style="padding: 4px; background-color: aqua; border: none; font-weight: 700;"  onclick="showElement('bba')">BBA</button>
+                    </div>
+                    <div>
+                        <h2>By Other</h2>
+                        <br>
+                        <button id="libraryd" style="padding: 4px; background-color: aqua; border: none; font-weight: 700;" onclick="showElement('library')">Library</button>
+                        <button id="cafed" style="padding: 4px; background-color: aqua; border: none; font-weight: 700;" onclick="showElement('cafe')">Cafe</button>
+                        <button id="sprotsd" style="padding: 4px; background-color: aqua; border: none; font-weight: 700;" onclick="showElement('sports')">Sports</button>
+                    </div>
+                    
+                </div>
+
+                <hr>
+
+
+
+
+                <div>
+                    <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                        
+                        <div> </div>
+                        <div style="display: flex;">
+                            
+                             <img src="/images/icons8-standing-man-100.png" alt="">
+                             <h2>Entrance</h2>
+                        </div>
+
+
+
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <h2>N</h2>
+                             <img src="/images/icons8-compass-64.png" alt="">
+                        </div>
+                    </div>
+
+
+                    <div style="background-image: url('/images/ss_2.jpg'); background-size: cover;background-position: center; background-repeat: no-repeat; height: 700px; position: relative;">
+
+                        <div id="vice_chancellor" style="position: absolute; right:420px; top: 130px; display: none;">
+                            <img src="/images/icons8-location (1).gif" alt="">
+                            <p style="color: black; font-weight: bolder;">Vice Chancellor Office</p>
+                        </div>
+
+
+                        <div id="dean_office" style="position: absolute; right:580px; top: 90px; display: none;">
+                            <img src="/images/icons8-location (1).gif" alt="">
+                            <p style="color: black; font-weight: bolder;">Dean Office</p>
+                        </div>
+
+                        <div id="register_office" style="position: absolute; left:340px; top: 120px; display: none;">
+                            <img src="/images/icons8-location (1).gif" alt="">
+                            <p style="color: black; font-weight: bolder;">Register Office</p>
+                        </div>
+
+
+
+
+
+                        <div id="cse" style="position: absolute; left:120px; bottom: 120px; display: none;">
+                            <img src="/images/icons8-location (1).gif" alt="">
+                            <p style="color: black; font-weight: bolder;"> CSE Building</p>
+                        </div>
+
+
+                        <div id="eee" style="position: absolute; left:120px; bottom: 300px; display: none;">
+                            <img src="/images/icons8-location (1).gif" alt="">
+                            <p style="color: black; font-weight: bolder;">EEE Building</p>
+                        </div>
+
+
+                        <div id="bba" style="position: absolute; left:320px; bottom: 380px; display: none;">
+                            <img src="/images/icons8-location (1).gif" alt="">
+                            <p style="color: black; font-weight: bolder;">BBA Building</p>
+                        </div>
+
+
+                        <div id="library" style="position: absolute; left:360px; bottom: 290px; display: none;">
+                            <img src="/images/icons8-location (1).gif" alt="">
+                            <p style="color: black; font-weight: bolder;">Library</p>
+                        </div>
+
+
+                        <div id="cafe" style="position: absolute; right:490px; bottom: 180px; display: none;">
+                            <img src="/images/icons8-location (1).gif" alt="">
+                            <p style="color: black; font-weight: bolder;">Cafe</p>
+                        </div>
+
+                        <div id="sports" style="position: absolute; right:370px; bottom: 120px; display: none;">
+                            <img src="/images/icons8-location (1).gif" alt="">
+                            <p style="color: black; font-weight: bolder;">Sports field</p>
+                        </div>
+                   
+
+                    </div>
+                </div>
+
+               
+            </div>
+    
+           
+    
+        </container>
+        <footer>
+         
+    
+            <div style="display: flex; justify-content: space-around; padding: 50px;">
+              <div>
+                <h2>Address</h2>
+                <br>
+                <p>Rupnagar Abashik</p>
+                <p>Mirpur 2</p>
+                <p>Dhaka 1250</p>
+                
+              </div>
+              <div>
+              
+                <h2>Usefull Links</h2>
+                <br>
+                <p>Blog</p>
+                <p>Success</p>
+                <p>About Us</p>
+                <p>Terms and Conditions</p>
+              </div>
+              <div>
+                <h2>Follow Us</h2>
+                <br>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+             
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center; font-size: 10px; margin-bottom: 20px;">
+    
+                Copyright@2024
+            </div>
+        </footer >
+    
+    
+
+<!-- <script>
+    var currentElement = null;
+  
+    function showElement(elementId) {
+      // Hide the currently displayed element
+      if (currentElement) {
+        currentElement.style.display = 'none';
+      }
+  
+      // Show the new element
+      var newElement = document.getElementById(elementId);
+      newElement.style.display = 'block';
+  
+      // Update the currentElement variable
+      currentElement = newElement;
+    }
+  </script> -->
+          
+
+
+          <script src="app.js"></script>
+
+    </body>
+    </html>
+    
+</body>
+</html>
